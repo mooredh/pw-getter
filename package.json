@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "MONGODB_URI=mongodb://127.0.0.1:27017/pw-getter node index.js"
+    "dev": "MONGODB_URI=mongodb://127.0.0.1:27017/pw-getter node index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
