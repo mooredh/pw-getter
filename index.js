@@ -17,7 +17,7 @@ const LifeSchema = new mongoose.Schema({
 
 const Life = mongoose.model('Life', LifeSchema);
 
-app.post('/0x667qy2', async (req,res) => {
+app.post('/x666pwg', async (req,res) => {
     try {
         let life = new Life({
             url: req.body.url,
